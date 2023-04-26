@@ -10,8 +10,7 @@ public class Empleado {
     public Empleado(){
     }
 
-    public  Empleado (Long id, String nombre, String password, String email){
-        this.id = id;
+    public  Empleado (String nombre, String password, String email){
         this.nombre = nombre;
         this.password = password;
         this.email = email;
@@ -40,6 +39,10 @@ public class Empleado {
     public void setPassword(String password){
         this.password =password;
     }
+
+    public String getEmail(){return email;}
+
+    public void setEmail (String email){ this.email=email;}
 
     public  String toString(){
         return "Empleado(" +
